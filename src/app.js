@@ -6,6 +6,7 @@ const app = express()
 app.use(express.json())
 
 const rotaUsuario = require('./routes/usuario')
+const rotaEmpresa = require('./routes/empresa')
 
 app.use(morgan('dev'))
 // app.use(bodyParser.urlencoded({ extended: false }))
@@ -25,6 +26,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/usuario', rotaUsuario)
+app.use('/empresa', rotaEmpresa)
 
 app.use((req, res, next) => {
     const erro = new Error('Rota não encontrada')
