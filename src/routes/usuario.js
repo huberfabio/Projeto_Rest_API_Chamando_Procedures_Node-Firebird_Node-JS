@@ -22,7 +22,8 @@ router.post('/', (req, res, next) => {
      req.body.LOGIN, 
      req.body.SENHA, 
      req.body.FOTO, 
-     req.body.WTIP],
+     req.body.WTIP,
+    ],
 
      function(err, result){
         if(err){
@@ -52,7 +53,8 @@ router.patch('/:id_usuario', (req, res, next) => {
      req.body.LOGIN, 
      req.body.SENHA, 
      req.body.FOTO, 
-     req.body.WTIP],
+     req.body.WTIP,
+    ],
 
      function(err, result){
         if(err){
@@ -72,7 +74,8 @@ router.delete('/:id_usuario', (req, res, next) => {
      req.body.LOGIN, 
      req.body.SENHA, 
      req.body.FOTO, 
-     req.body.WTIP],
+     req.body.WTIP,
+    ],
 
      function(err, result){
         if(err){
